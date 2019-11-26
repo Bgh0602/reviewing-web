@@ -2,40 +2,43 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>review</title>
     <style>
+    #ex1-1 {
+      color:red;
+    }
+    #ex1 {
+      font-size: 50px;
+    }
+    a {
+      text-decoration: none;
+      color:black;
+    }
     </style>
   </head>
   <body>
-    <h1>How to do JavaSript?</h1>
+    <h1><a href="intro.html">How to do JavaSript?</a></h1>
     <h2><ul>
-      <li><a href="file:///C:/Users/82104/Desktop/reveiw/ex1.html">ex1)JavaScript Can Change HTML Content</a></li>
-      <li>ex2)JavaScript Can Change HTML Attribute Values</li>
-      <li>ex3)JavaScript Can Show HTML Elements</li>
+      <li><a id="ex1-1"href="ex1.html">ex1)JavaScript Can Change HTML Content</a></li>
+      <li><a href="ex2.html">ex2)JavaScript Can Change HTML Attribute Values</a></li>
+      <li><a href="ex3.html">ex3)JavaScript Can Show HTML Elements</a></li>
     </ul></h2>
     <p>
-      <h3>Did you know?</h3>
-       JavaScript and Java are completely different languages, both in concept and design.
-      JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
-      ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
-      You can read more about the different JavaScript versions in the chapter JS Versions.
+      <h3>JavaSript is wizard!</h3>
+      JavaScript is the dynamic, lightweight and most commonly computer programming
+      language used to create a web pages. It interact with client side and make dynamic pages.
+      JavaScript Can Change Content of HTML page: The getElementById() method
+      is used to get the id of element and change the HTML content.
     </p>
     <p>
-      <i>If you feel that you need more knowledge, watch below video!</i>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dPRtcRwKo-Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </p>
+      one of many JavaScript HTML methods is getElementById().
+      This example uses the method to "find" an HTML element (with id="ex-1")
+      and changes the element content (innerHTML) to "You can do it!"or "Just give up!":
+      <br><i><strong>Let's see the below example.</strong></i></P>
     <p id="ex1">
       Should I need to do JavaSript?</p>
     <button type="button" onclick='document.getElementById("ex1").innerHTML="You can do it!"'>positive</button>
     <button type="button" onclick="document.getElementById('ex1').innerHTML='Just give up!'">nagative</button>
-    <p>
-      <button type="button" onclick="document.getElementById('img').src='pic_bulboff.gif'">Turn off the light</button>
-      <img id="img" src="pic_bulboff" style="width:100px">
-      <button type="button" onclick="document.getElementById('img').src='pic_bulbon.gif'">Turn on the light</button>
-    </p>
-    <br><button type="button" onclick="document.getElementById('changing').style.display='block'">click me</button>
-    <p id="changing" style="display:none">
-      JavaSript can change the stylel of an HTML element.
     </p>
   </body>
 </html>
