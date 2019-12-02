@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-
-document.getElementById('button').onclick=function () {
-alert("황버리지")
-}
-});
+var x = 30;
+alert(x);
+x = 60;
+alert(x);
+x = 50;
+alert(x);
