@@ -1,13 +1,16 @@
-var q = confirm("Are we in school")
-if (q) {
-  alert("you are good")
-} else {
-  alert("양아치")
+function print(s) {
+  document.write(s);
 }
 
-var q = prompt("Why are you in school?")
-if (q == "I'm a student") {
-  alert("Good")
-} else {
-  alert("Think more")
+//5팩을 하면 120이 나와야한다!
+
+var t = +prompt("number in right now !")
+var a = 1;
+var result = 1;
+
+while ( a < t ) {
+  result = result * (a + 1);
+  a++;
 }
+
+print(result)
